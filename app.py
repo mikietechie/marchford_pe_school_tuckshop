@@ -8,7 +8,7 @@ from services import DataModelService
 
 
 bgpfgl_style = dict(
-    background="#a0d2eb"
+    background="#e1e8f0"
 )
 
 class TkCallWrapper(tk.CallWrapper):
@@ -44,7 +44,7 @@ class Application():
         self.clear_widget(self.container)
         frame = tk.Frame(self.container, **bgpfgl_style)
         frame.place(relheight=0.89, relwidth=0.98, relx=0.01, rely=0.1)
-        tk.Button(self.container, text="H O M E", command=self.render_home, foreground="#000000", background="#a0d2eb",
+        tk.Button(self.container, text="H O M E", command=self.render_home, foreground="#000000", background="#e1e8f0",
                   relief=tk.FLAT
         ).place(relheight=0.1, relwidth=1, relx=0, rely=0.0)
         return frame
